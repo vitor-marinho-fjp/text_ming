@@ -1,5 +1,5 @@
 
-![Evolução do Desmatamento e Floresta ](/nuvem_palavras.png)
+![Nuvem de Palavras ](/nuvem_de_palavras.png)
 ---
 
 # Análise de Nuvem de Palavras das Bolsas ISC para o #TidyTuesday
