@@ -49,19 +49,14 @@ title(main = "Palavras-Chave no Universo das Bolsas ISC:\nMapeando Tendências n
       col.sub = "black",
       cex.sub = 0.8)  # Ajustando o tamanho do subtítulo
 
-# Fecha o dispositivo gráfico e salva a imagem
-dev.off()
 
-# Salvando a Wordcloud
-# ------------------------------------------------------------------------------
+
+
+# Salvando a Wordcloud ------------------------------------------------------------------------------
 # Abre o dispositivo gráfico com as dimensões 
 png("nuvem_de_palavras.png", width = 1620, height = 1620, units = "px", res = 300)
 
-# Incluir o código de criação da wordcloud aqui
+# Fecha o dispositivo gráfico e salva a imagem
 dev.off()
-
-
-
-
 
  
