@@ -32,22 +32,36 @@ df <- data.frame(word = names(words), freq = words)
 
 # Criação da Wordcloud
 # ------------------------------------------------------------------------------
-set.seed(1234)
-par(mar = c(5, 4, 4, 2))  # Ajuste das margens
+
+# Ajuste das margens 
+par(mar = c(5, 4, 6, 4))  # margens inferior, esquerda, superior e direita
+
+# Criando a nuvem de palavras
 wordcloud(words = df$word, freq = df$freq, min.freq = 1,
           max.words = 100, random.order = FALSE, rot.per = -1.5,
           colors = ggthemes::tableau_color_pal()(10))
 
-# Adição de Título e Subtítulo
+# Adicionando títulos
 title(main = "Palavras-Chave no Universo das Bolsas ISC:\nMapeando Tendências no Desenvolvimento do R", 
       col.main = "black",  
-      cex.main = .8,  # Ajuste do tamanho do título
+      cex.main = .7,  # Ajustando o tamanho do título
       sub = "Fonte: TidyTuesday - @vit0rmarinh0",
       col.sub = "black",
-      cex.sub = .5)  # Ajuste do tamanho do subtítulo
+      cex.sub = 0.8)  # Ajustando o tamanho do subtítulo
+
+# Fecha o dispositivo gráfico e salva a imagem
+dev.off()
 
 # Salvando a Wordcloud
 # ------------------------------------------------------------------------------
-png("nuvem_de_palavras.png", width = 19, height = 9, units = "in", res = 300)
+# Abre o dispositivo gráfico com as dimensões 
+png("nuvem_de_palavras.png", width = 1620, height = 1620, units = "px", res = 300)
+
 # Incluir o código de criação da wordcloud aqui
 dev.off()
+
+
+
+
+
+ 
